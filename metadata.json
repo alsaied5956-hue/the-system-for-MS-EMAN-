@@ -1,0 +1,6 @@
+{
+  "name": "منظومة الأستاذة إيمان الدمشتي",
+  "description": "منظومة إدارة حضور وغياب الطلاب ورصد الدرجات والاشتراكات الشهرية وتصدير تقارير PDF ورسائل الواتساب للأستاذة إيمان الدمشتي",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

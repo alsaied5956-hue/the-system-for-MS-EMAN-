@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap');
+
+:root {
+  --bg-dark: #070a11;
+  --card-bg: rgba(18, 25, 38, 0.85);
+  --card-border: rgba(212, 175, 55, 0.18);
+  --primary-gold: #e6c667;
+  --gold-gradient: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+  --accent-cyan: #00e5ff;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --input-bg: rgba(9, 14, 23, 0.9);
+  --table-header-bg: rgba(15, 23, 42, 0.95);
+  --hover-bg: rgba(212, 175, 55, 0.05);
+  --modal-bg: rgba(3, 7, 18, 0.75);
+  --success-color: #10b981;
+  --danger-color: #f43f5e;
+  --warning-color: #f59e0b;
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+[data-theme="light"] {
+  --bg-dark: #f4f6f9;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --card-border: rgba(179, 135, 40, 0.25);
+  --primary-gold: #a3771e;
+  --gold-gradient: linear-gradient(135deg, #b38728 0%, #d4af37 50%, #966c15 100%);
+  --accent-cyan: #0284c7;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --input-bg: #ffffff;
+  --table-header-bg: #f8fafc;
+  --hover-bg: rgba(179, 135, 40, 0.06);
+  --modal-bg: rgba(15, 23, 42, 0.55);
+  --glass-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+body {
+  background-color: var(--bg-dark);
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(212, 175, 55, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(0, 229, 255, 0.05) 0%, transparent 45%);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  direction: rtl;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-gold);
+}
